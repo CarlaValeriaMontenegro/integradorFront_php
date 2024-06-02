@@ -1,0 +1,103 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | CAC-MOVIES</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/registro.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="./index.html"> <img src="./assets/claquete.png"  width="50" height="50"  alt="claqueta">CAC-MOVIES</a>
+            <ul>
+                <li><a href="./index.html#tendencias">Tendencias</a></li>
+                <li><a href="./index.html#aclamadas">Aclamadas</a></li>
+                <li><a href="./registro.html">Registrarse</a></li>
+                <li><a href="./api.html" class="btn-api">Acceso API</a></li>
+                <li class="btn-negro"><a href="./loginInicioSesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login">
+            <form id="registroForm">
+                <h2>Registrarse</h2>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento" required>
+                <select id="pais" required>
+                    <option value="" disabled selected>Selecciona tu país</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CA">Canadá</option>
+                    <option value="CL">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CU">Cuba</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="SA">El Salvador</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HN">Honduras</option>
+                    <option value="JN">Jamaica</option>
+                    <option value="MX">México</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="PA">Panamá</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Perú</option>
+                    <option value="Do">República Dominica</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VE">Venezuela</option>
+
+                </select>
+                <div>
+                    <input type="checkbox" id="terminos" required>
+                    <label for="terminos">Acepto los <a href="#">términos y condiciones</a></label>
+                </div>
+                <button type="submit" class="btn-registrarse">Registrarse</button>
+                <p class="register-message">¿Ya tienes una cuenta? <a href="./loginInicioSesion.html">Inicia sesión.</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>Términos y condiciones</li>
+                <li>Preguntas frecuentes</li>
+                <li>Ayuda</li>
+                <li class="btn-negro">Administrador Peliculas</li>
+            </ul>
+        </nav>
+    </footer>
+
+    
+
+    <script src="../../scriptRegistro/registro.js"></script>
+
+</body>
+
+</html>

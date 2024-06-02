@@ -1,0 +1,211 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🎞 CAC-Movies</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+    
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="./index.html"> <img src="./assets/claquete.png"  width="50" height="50"  alt="claqueta"> CAC-Movies </a>
+            <ul>
+                <li><a href="#tendencias">Tendencias</a></li>
+                <li><a href="#aclamadas">Aclamadas</a></li>
+                <li><a href="./registro.html">Registrarse</a></li>
+                <li><a href="./api.html" class="btn-api">Acceso API</a></li>
+                <li class="btn-negro"><a href="./iniciarSesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inicio animate__animated animate__zoomIn animate__delay-1s">
+            <h1>Películas y series ilimitadas <br>en un solo lugar</h1>
+            <h2 class="frase-inicio">Disfruta donde quieras <br>Cancela en cualquier momento.</h2>
+            <button class="boton">Registrate</button>
+        </section>
+
+        <section class="contenedor-buscando">
+            <div class="buscando">
+                <h3>¿Que estas buscando para ver?</h3>
+                <form>
+                    <input class="buscar-pelicula" type="text" placeholder="Nombre de la Película">
+                    <input class="boton btn-buscar" type="submit" value="Buscar">
+                </form>
+            </div>
+        </section>
+
+        <section id="tendencias" class="container">
+            <h3 class="text-center mt-5">Las tendencias de hoy</h3>
+            <div class="row mt-4 contenedor-card">
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_1.jpg" alt="Beekeeper: sentancia de muerte">
+                        <h4 class="titulo">Beekeeper: sentancia de muerte</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_2.jpg" alt="Cazadores en tierra inhóspita">
+                        <h4 class="titulo">Cazadores en tierra inhóspita</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_3.jpg" alt="The Marvels">
+                        <h4 class="titulo">The Marvels</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_4.jpg" alt="Wonka">
+                        <h4 class="titulo">Wonka</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_5.jpg" alt="Aquaman 2">
+                        <h4 class="titulo">Aquaman 2</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_6.jpg" alt="¡Patos!">
+                        <h4 class="titulo">¡Patos!</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_7.jpg" alt="60 Minutos">
+                        <h4 class="titulo">60 Minutos</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_8.jpg" alt="Wish: El poder de los deseos">
+                        <h4 class="titulo">Wish: El poder de los deseos</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_9.jpg" alt="El Ángel Enmascarado">
+                        <h4 class="titulo">El Ángel Enmascarado</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_10.jpg" alt="Pálido">
+                        <h4 class="titulo">Pálido</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_11.jpg" alt="Orión y la oscuridad">
+                        <h4 class="titulo">Orión y la oscuridad</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="pelicula">
+                        <img src="./assets/peli_12.jpg" alt="Genghis Khan">
+                        <h4 class="titulo">Genghis Khan</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="boton">Anterior</button>
+            <button class="boton">Siguiente</button>
+
+        </section>
+
+        <section id="aclamadas">
+            <h3>Las más aclamadas</h3>
+            <div class="contenedor-peliculas">
+                <div style="background-image: url('./assets/aclamada_1.jpg');">
+                    <h4>Sueño de fuga</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_2.jpg');">
+                    <h4>El Padrino</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_3.jpg');">
+                    <h4>El Padrino parte II</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_4.jpg');">
+                    <h4>La lista de Schindler</h4>
+                </div>
+                <div style="background-image: url('./assets/img/aclamada_5.jpg');">
+                    <h4>Doce hombres en pugna</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_6.jpg');">
+                    <h4>El viaje de Chihiro</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_7.jpg');">
+                    <h4>Batman: el caballero de la noche</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_8.jpg');">
+                    <h4>Parásitos</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_9.jpg');">
+                    <h4>Milagros inesperados</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_10.jpg');">
+                    <h4>Forrest Gump</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_11.jpg');">
+                    <h4>Tiempos violentos</h4>
+                </div>
+                <div style="background-image: url('./assets/aclamada_12.jpg');">
+                    <h4>El Señor de los Anillos: el retorno del Rey</h4>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>Términos y condiciones</li>
+                <li>Preguntas frecuentes</li>
+                <li>Ayuda</li>
+                <li class="btn-negro">Administrador Peliculas</li>
+            </ul>
+        </nav>
+    </footer>   
+
+</body>
+
+</html>

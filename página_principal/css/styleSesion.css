@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.botonRegistrarse {
+    height: 100vh;
+    background: linear-gradient(to right top, #24242473, #24242473), url(../assets/imgFondo_inicioSesion.jpg);
+
+    background-size: cover;
+    background-position: center;
+}
+@media(max-width:1200px){
+    .botonRegistrarse{
+        headerRegistrarse{
+            padding: 20px;
+        }
+    }
+}
+
+body{
+    background-color: #181419;
+    color: white;
+}
+header{
+    display: block;
+    unicode-bidi: isolate;
+}
+.headerRegistrarse {
+    color: #ffffff;
+    height: 8vh;
+    padding: 30px;
+}
+

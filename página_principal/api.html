@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎞 CAC-Movies</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <link rel="stylesheet" href="./css/api.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="./index.html"> <img src="./assets/claquete.png" width="50" height="50" alt="claqueta">CAC-Movies</a>
+            <ul>
+                <li><a href="./index.html#tendencias">Tendencias</a></li>
+                <li><a href="./index.html#aclamadas">Aclamadas</a></li>
+                <li><a href="./registro.html">Registrarse</a></li>
+                <li><a href="./api.html" class="btn-api">Acceso API</a></li>
+                <li class="btn-negro"><a href="./loginInicioSesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="intro">
+                <h2>Aquí verás la colección de personajes</h2>
+                <p>Eligí uno los personajes de "The Rick and Morty" </br>Selecciona tu opción:</p>
+                <div class="opciones">
+                    <a href="#rick" class="boton">Personajes de The Rick and Morty</a>
+                    
+                </div>
+            </div>
+
+            <h3 id="rick" class="h3Personajes">Personajes The Rick and Morty</h2>
+                <div id="personajesRick"></div> <!-- Se carga con JS -->
+
+                
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>Términos y condiciones</li>
+                <li>Preguntas frecuentes</li>
+                <li>Ayuda</li>
+                <li class="btn-negro">Administrador Peliculas</li>
+            </ul>
+        </nav>
+    </footer>
+
+    
+
+    <script src="./api.js"></script>
+</body>
+
+</html>

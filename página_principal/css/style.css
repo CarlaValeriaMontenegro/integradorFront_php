@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+/*--- H E A D E R   y   F O O T E R ---*/
+
+
+header,
+footer {
+    height: 100px;
+    background-color: #9f3647;
+    color: white;
+    font-size: 1.1em;
+}
+
+nav {
+    padding-top: 6.5px;
+    padding-right: 10px;
+}
+
+nav,
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: color;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav ul {
+    margin-bottom: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 20px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+nav li:hover {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    padding-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: rotate(5deg);
+}
+
+.btn-negro,
+.boton {
+    border: none;
+    border-radius: 12px;
+}
+
+.btn-negro {
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.boton {
+    background-color: #9f3647;
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+.buscar-pelicula {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 500px;
+    height: 25px;
+}
+
+
+
+main {
+    background: black;
+}
+
+section {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    text-shadow: 3px -3px 1px #9f3647;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+
+.inicio {
+    background-image: url("../assets/banner_bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+h1,
+.frase-inicio,
+.boton {
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.frase-inicio {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+
+
+.contenedor-buscando {
+    height: 300px;
+    border-bottom: 1px solid #9f3647;
+}
+
+.buscar-pelicula {
+    height: 40px;
+    border-radius: 12px;
+}
+
+.btn-buscar {
+    height: 40px;
+    padding: 0 20px
+}
+
+
+
+#tendencias{
+    border-bottom: 1px solid #9f3647;
+    padding-bottom: 80px;
+}
+
+.contenedor-card{
+    margin-bottom: 25px;
+}
+
+.pelicula {
+    position: relative;
+    overflow: hidden;
+}
+
+.pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.pelicula:hover img {
+    transform: scale(1.1);
+}
+
+.titulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pelicula:hover .titulo {
+    opacity: 1;
+}
+
+
+
+.contenedor-peliculas {
+    display: flex;
+    height: 26rem;
+    gap: 0.5rem;
+}
+
+.contenedor-peliculas h4 {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-size: 2em;
+}
+
+.contenedor-peliculas>div {
+    flex: 1;
+    border-radius: 3px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-peliculas>div:hover {
+    flex: 15;
+}
+
+.contenedor-peliculas>div:hover h4 {
+    display: block;
+}
+
+#aclamadas {
+    padding-bottom: 90px;
+}
+
+
+

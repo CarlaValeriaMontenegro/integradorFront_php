@@ -1,0 +1,64 @@
+.intro{
+    background-image: url("../assets/fondo_API.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+
+.intro p{
+    padding-bottom: 50px;
+}
+
+h2 {
+    padding: 50px;
+}
+
+.opciones a{
+    text-decoration: none;
+}
+
+.opciones a:hover{
+    color: white;
+}
+
+.h3Personajes{
+    border-bottom: 1px solid #9f3647;
+    border-top: 1px solid #9f3647;
+}
+
+#personajesRick{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#personajesRick > div {
+    flex: 0 1 calc(30% - 20px);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    
+}
+
+#personajesRick > div img{
+    width: 150px;
+    height: 250px;
+    object-fit: scale-down;
+    border-radius: 10px;
+    object-position: top;
+
+}
+
+#personajes h4 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
